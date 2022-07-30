@@ -6,8 +6,16 @@ app.use(express.json())
 const port = process.env.PORT || 3000
 
 const instruction = `<h3 style="text-color:green; margin-top:50px; margin-left:200px">Use Postman to interact with the API. A JWT token will be provided to authorise certain routes.</h3>
-<p style="text-color:green; margin-left:200px">
+<p style="color:green; margin-left:200px">
 <b>Technologies Used:</b> Node.js, Express.js, MongoDB, Mongoose, JSON Web Token, Bcrypt.js, Multer and more
+</p>
+<h3 style="color:red; margin-left:200px">::Hints::</h3>
+<p style="text-color:green; margin-left:200px">
+Pass the values in raw json:<br>
+{<br>
+    "email": "yourname@example.com",<br>
+    "password": "xxxxxx" <br>
+}
 </p>
 <h4 style="margin-left:200px">endpoint /signup (POST) to create a user with email and password field<br>
 endpoint /login (POST) to login using a valid email and password. A token will be provided <br>
