@@ -9,7 +9,7 @@ const instruction = `<h3 style="text-color:green; margin-top:50px; margin-left:2
 <p style="text-color:green; margin-left:200px">
 <b>Technologies Used:</b> Node.js, Express.js, MongoDB, Mongoose, JSON Web Token, Bcrypt.js, Multer and more
 </p>
-<h4 style="margin-left:200px">endpoint /sign-up (POST) to create a user with email and password field<br>
+<h4 style="margin-left:200px">endpoint /signup (POST) to create a user with email and password field<br>
 endpoint /login (POST) to login using a valid email and password. A token will be provided <br>
 endpoint /profile (GET) to read own profile<br>
 endpoint /profile (PATCH) to update profile<br>
