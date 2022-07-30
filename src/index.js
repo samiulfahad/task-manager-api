@@ -8,9 +8,14 @@ const port = process.env.PORT || 3000
 app.use(userRouter)
 // Adding Task Router
 app.use(taskRouter)
+
+// Home Page
+app.get('/', (req, res)=>{
+    res.status(200).send('Homepage')
+})
 // Adding 404 Page
 app.get('*', (req, res)=>{
-    res.send('Page NOT Found')
+    res.status(404).send('Page NOT Found')
 })
 // App Listening
 app.listen(port, ()=>{

@@ -167,12 +167,4 @@ router.get('/user/*', (req, res)=>{
     res.status(404).send('This User Route is NOT available')
 })
 
-// Home Page
-router.get('/', (req, res)=>{
-    res.status(200).send('Homepage')
-})
-// All Page
-router.get('*', (req, res)=>{
-    res.status(404).send('This User Route is NOT available')
-})
 module.exports = router
